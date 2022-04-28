@@ -38,10 +38,10 @@ const circle = document.getElementById("circle")
 let clickcircle = false
 circle.addEventListener("click", ()=> {clickcircle = true})
 
-field.addEventListener("mousemove", (event)=>{
+field.addEventListener("mousemove", (e)=>{
    if(clickcircle == true ){
-       let coursorx = event.pageX - field.offsetLeft
-       let coursory = event.pageY - field.offsetTop
+       let coursorx = e.pageX - field.offsetLeft
+       let coursory = e.pageY - field.offsetTop
        if (coursorx < field.offsetWidth - circle.offsetWidth && coursory< field.offsetHeight - circle.offsetHeight){
            circle.style.left = coursorx  +'px'
            circle.style.top = coursory  +'px'
