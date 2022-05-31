@@ -5,8 +5,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lab7</title>
+        <script src = "https://kit.fontawesome.com/3d0e27e432.js"></script>
+        <link rel="stylesheet" href = "./style.css">
     </head>
     <body>
+        <div class="header">
+            <div class="header-row">
+
+                <div class="search-box">
+                    <input id= "search-box-text" type = "text" placeholder="Введите для поиска... ">
+                    <div id="search-btn" class="search-btn">
+                        <i class ="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather">
+            <div class ="background">
+                <div class="Today">
+                    <div class ="city" id="city"></div>
+                    <div class ="temperature" id="temperature"></div>
+                    <div class ="info" class="info">
+                        <div class ="icon" id="icon"></div>
+                        <div class="condition" id="condition"></div>
+                    </div>
+                </div>
+                <div class="addition">
+                    <div id="wind"></div>
+                    <div id="pressure"></div>
+                    <div id="wet"></div>
+                </div>
+            </div>
+        </div>
 
     </body>
+    <script src ="script.js"></script>
 </html>
